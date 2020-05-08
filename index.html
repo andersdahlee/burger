@@ -169,27 +169,21 @@
         <!-- Modal Body -->
         <div class="modal-body">
           <div class="col-md-6 col-md-offset-3">
-            <form id="henvenddegbbg@gmail.com" action="" method="post">
-                <div class="row">
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input name="name" type="text" class="form-control" id="name" placeholder="Ditt navn..." required="">
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input name="email" type="email" class="form-control" id="email" placeholder="Din epost..." required="">
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Hvorfor skal du være med..." required=""></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="btn">Send melding nå</button>
-                      </fieldset>
+            <h2>Send e-mail to someone@example.com:</h2>
+
+            <form action="mailto:henvenddegbbg@gmail.com" method="post" enctype="text/plain">
+            Name:<br>
+            <input type="text" name="name"><br>
+            E-mail:<br>
+            <input type="text" name="mail"><br>
+            Comment:<br>
+            <input type="text" name="comment" size="50"><br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+            </form>
+            
+            </body>
+            </html>
                     </div>
                 </div>
             </form>
